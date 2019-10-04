@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteName]" parallel="tests">
+  <test thread-count="5" name="Login Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="doLoginTest" invocation-numbers="0"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test thread-count="5" name="Lead Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest">
+        <methods>
+          <include name="deleteLeadAccountTest" invocation-numbers="0"/>
+          <include name="createLeadTest" invocation-numbers="2 3"/>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest -->
+    </classes>
+  </test> <!-- Lead Test(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->
